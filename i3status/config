@@ -7,8 +7,10 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
+	output_format = "i3bar"
         colors = true
         interval = 5
+	markup = pango
 }
 
 #order += "ipv6"
@@ -17,13 +19,14 @@ order += "volume master"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
+order += "cpu_temperature 0" 
 order += "disk /"
 order += "load"
 order += "memory"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
+        format_up = " (%quality at %essid) %ip"
         format_down = "W: down"
 }
 
@@ -33,22 +36,29 @@ ethernet _first_ {
 }
 
 volume master {
-	format = "%volume"
-	format_muted = "muted (%volume)"	
+	format = " %volume"
+	format_muted = " (%volume)"	
 }
 
 read_file BRIGHTNESS {
-	format = "BRI %content"
+	format = " %content"
 	path = "/home/albert/.config/brightness"
 	max_characters = 5
 }
 
 battery all {
         format = "%status %percentage %remaining"
+	status_chr = ""
+	status_bat = "" 
+	status_full = ""
+}
+
+cpu_temperature 0 {
+        format = " %degrees°C"
 }
 
 disk "/" {
-        format = "%avail"
+        format = " %avail"
 }
 
 load {
@@ -56,11 +66,11 @@ load {
 }
 
 memory {
-        format = "%used - %available"
+        format = " %used - %available"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = " %Y-%m-%d %H:%M"
 }
