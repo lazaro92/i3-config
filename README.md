@@ -14,3 +14,4 @@ The folders goes into the user's `.config` directory.
 | Firefox | my prefered web browser |
 | Termite      | A Terminal emulator |
 | imagemagick | Image manipulation package used to take screenshoots |
+| feh | Image visualizer used to display an image as a Wallpaper |
