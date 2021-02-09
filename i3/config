@@ -41,8 +41,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use light to adjust screen brightness
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 -O && light > /home/albert/.config/brightness && $refresh_i3status
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 -O && light > /home/albert/.config/brightness && $refresh_i3status
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 -O
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 -O
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -148,6 +148,11 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
+# programs
+
+bindsym Print exec --no-startup-id import -window root ~/Pictures/screenshoot_`date +%Y-%m-%d.%H:%M:%S`.png
+bindsym $mod+p exec clipmenu -i -fn Terminus:size=8 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1'
+bindsym XF86HomePage exec firefox
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode

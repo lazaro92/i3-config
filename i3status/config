@@ -14,7 +14,7 @@ general {
 }
 
 #order += "ipv6"
-order += "read_file BRIGHTNESS"
+#order += "read_file BRIGHTNESS"
 order += "volume master"
 order += "wireless _first_"
 order += "ethernet _first_"
