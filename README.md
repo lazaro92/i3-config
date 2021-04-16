@@ -15,3 +15,5 @@ The folders goes into the user's `.config` directory.
 | Termite      | A Terminal emulator |
 | imagemagick | Image manipulation package used to take screenshoots |
 | feh | Image visualizer used to display an image as a Wallpaper |
+| zathura | Minimal document viewer |
+| zathura-pdf-mupdf | Plugin for Zatura that enable the visualization of PDF files. |
