@@ -11,11 +11,12 @@ The folders goes into the user's `.config` directory.
 
 | Software        | Description | 
 | ------------- |-------------|
-| Firefox | my prefered web browser. |
-| imagemagick | Image manipulation package used to take screenshoots. |
-| feh | Image visualizer used to display an image as a Wallpaper. |
-| Alacritty | A Terminal emulator. |
-| unzip | Tool for decompressing zip files. |
-| unrar | Tool for decompressing rar files. |
-| zathura | Minimal document viewer. |
-| zathura-pdf-mupdf | Plugin for Zatura that enable the visualization of PDF files. |
+| Dunst | Lightweight notifications daemon |
+| Firefox | my prefered web browser |
+| imagemagick | Image manipulation package used to take screenshoots |
+| feh | Image visualizer used to display an image as a Wallpaper |
+| Alacritty | A Terminal emulator |
+| unzip | Tool for decompressing zip files |
+| unrar | Tool for decompressing rar files |
+| zathura | Minimal document viewer |
+| zathura-pdf-mupdf | Plugin for Zatura that enable the visualization of PDF files |
